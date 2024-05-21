@@ -39,9 +39,8 @@ html {
   .play-button{
     background-color:#ffffff;
     color: #6bc4ff;
-    scale: 350%;
+    scale: 200%;
     border: 0px;
-    width: 200px;
-    border-radius: 5px;
+    width: 20%;
+    border-radius: 8px;
   }
-}
