@@ -3,16 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Hide and Seek</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Add a title</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 		<!--Installing A-Frame-->
 		<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe- 
-    extras.min.js"></script> 
+		
+		<!-- The aframe-extras version 5 add-on enables glb animations and lots of other things -->
+<script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script> 
+
 
 </head>
 <body>
-<p>hi</p>
+    <a-scene>
+        
+        <a-light type="point" position=" 5 5 -5" color="white" light="castShadow:true" 
+        ></a-light>
+       
+        <a-light type="point" position="-5 5 -5" color="darkcyan"  light="castShadow:true"
+        ></a-light>
+        
+        <a-sky color="midnightblue"></a-sky>
+      
+        <a-plane color="sandybrown" width="1000" height="1000" depth="1000" position="0 0 0" 
+        rotation="-90 0 0" shadow="receive: true"></a-plane>
+        
+        
+ <a-entity position="0 0 0" 
+    animation__rotate="
+        property: rotation;
+        from:0 0 0;
+        to: 0 180 0;
+        dur: 6000;
+        easing: linear;
+        startEvents: loaded, animationcomplete__from;
+        "
+    animation__to="
+        property: position;
+        from: 0 0 0;
+        to: 10 0 0;
+        dur: 1700;
+        easing: linear;
+        startEvents: animationcomplete__rotate;
+        "
+        
+    animation__rotate2="
+        property: rotation;
+        from:0 -180 0;
+        to: 0 0 0;
+        dur: 6000;
+        easing: linear;
+        startEvents: animationcomplete__to;
+        "
+        
+    animation__from="
+        property: position;
+        from: 10 0 0;
+        to: 0 0 0;
+        dur: 1700;
+        easing: linear;
+        startEvents: animationcomplete__rotate2;
+        "
+     >
+        <a-gltf-model src="https://codehs.com/uploads/9533001651f3bcbb04afb2696f078020"
+        animation-mixer  position="2 0 -10" scale="3 3 3" shadow="cast:true" rotation="0 -90 0"
+       
+        ></a-gltf-model>
+
+ </a-entity>
+        
+ 
+    </a-scene>
+
 </body>
 
 </html>

@@ -3,33 +3,36 @@ html {
   text-align: center;
 
   border: solid #8cbccf 20px;
-  
+
   background-color: #e9f4f4;
 
-  
-    
-
-
+  overflow-y: auto;
 
   font-family: "Playfair Display", "Didot", "Times New Roman", Times, serif;
 
+  height: 96vh;
 
-} 
-  .centreColumn {
-    margin-left: 33%;
-    margin-right: 33%;
-    margin-top: 0%;
-    background-color: #afdae9;
-    padding-top: 90px;
-    height: 100%;    
-    color: white;
-    font-size: 70px;
-  }
-  .title {
-   padding: 10px;
-    margin-right: 30%;
-    margin-left: 30%;
-  }
+}
+
+
+.centreColumn {
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: #afdae9;
+  padding-top: 90px;
+  height: 96vh;
+  color: white;
+  font-size: 70px;
+}
+
+.title {
+  padding: 10px;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
 .info {
   font-size: 40px;
   padding-top: 50px;
@@ -37,18 +40,28 @@ html {
   padding-right: 20px;
 }
 
+.play-button {
+  border: 0px;
+  border-radius: 30px;
+  background-color: white;
+  color: #6bc4ff;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 50%;
+  font-family: "Playfair Display", "Didot", "Times New Roman", Times, serif;
+}
 
-  
-  .play-button{
-    background-color:#ffffff;
-    color: #6bc4ff;
-    scale: 100%;
-    border: 0px;
-    width: 30%;
-    height: 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    padding-left: 60px;
-    padding-right: 60px;
-    font-size: 50px;
-  }
+.info-button{
+  color: #6bc4ff;
+  text-decoration: none;
+  background-color: white;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
