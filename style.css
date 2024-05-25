@@ -1,41 +1,46 @@
 html {
-
   text-align: center;
-
-  border: solid #8cbccf 20px;
-
   background-color: #e9f4f4;
-
-  overflow-y: auto;
-
   font-family: "Playfair Display", "Didot", "Times New Roman", Times, serif;
-
-  height: 96vh;
-
+  overflow-y: hidden;
 }
 
+.annoyingPage {
+  margin: 0px;
+  height: 100vh;
+}
+
+.irritatingPage {
+  margin: 0px;
+  height: 100%;
+  box-sizing: border-box;
+  border: solid #8cbccf 20px;
+  /*border: solid green 1px;*/
+}
 
 .centreColumn {
   margin-left: 33%;
   margin-right: 33%;
-  margin-top: 0%;
-  margin-bottom: 0%;
   background-color: #afdae9;
-  padding-top: 90px;
-  height: 96vh;
   color: white;
-  font-size: 70px;
+  /* border: solid #afdae9 1px; */
+  border: 0px;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .title {
-  padding: 10px;
-  margin-right: 30%;
-  margin-left: 30%;
+  /*padding: 10px;*/
+  margin: 0px;
+  font-size: 60px;
+  /*margin-right: 30%;
+  margin-left: 30%;*/
 }
 
 .info {
-  font-size: 40px;
-  padding-top: 50px;
+  font-size: 30px;
+  /*padding-top: 50px;*/
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -47,16 +52,33 @@ html {
   color: #6bc4ff;
   padding-left: 60px;
   padding-right: 60px;
+  margin-top: 20px;
   text-align: center;
   text-decoration: none;
   font-size: 50px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+  /*transition-duration: 0.4s;
+  cursor: pointer;*/
   width: 50%;
   font-family: "Playfair Display", "Didot", "Times New Roman", Times, serif;
 }
 
-.info-button{
+.info-button {
+  color: #6bc4ff;
+  text-decoration: none;
+  background-color: white;
+  font-size: 30px;
+  /*margin-top: 20px;*/
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+
+.xwelcome {
+  font-size: 50px;
+  color: white;
+}
+
+.xback {
   color: #6bc4ff;
   text-decoration: none;
   background-color: white;
@@ -64,4 +86,11 @@ html {
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 30px;
+}
+
+.xinfo2 {
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
