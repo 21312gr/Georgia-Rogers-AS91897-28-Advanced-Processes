@@ -15,12 +15,15 @@ html {
   height: 100%;
   box-sizing: border-box;
   border: solid #8cbccf 20px;
+  display: inline-flex;
+  width: 100%;
   /*border: solid green 1px;*/
 }
 
 .centreColumn {
-  margin-left: 33%;
-  margin-right: 33%;
+  /* margin-left: 33%;
+  margin-right: 33%;*/
+  width: 34%;
   background-color: #afdae9;
   color: white;
   /* border: solid #afdae9 1px; */
@@ -28,6 +31,45 @@ html {
   height: 100%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.sideColumn {
+  width: 33%;
+  border: solid black 1px;
+  height: 100%;
+  position: relative;
+  /*display: flex;
+  justify-content: flex-end;
+  flex-direction: column;*/
+}
+
+#leftCatPile {
+  border: solid red 1px;
+  /*float: right;*/
+  
+  position: absolute;
+  bottom: 0px; left: 0px;
+}
+#rightCatPile {
+  border: solid red 1px;
+  /*float: right;*/
+
+  position: absolute;
+  bottom: 0px; right: 0px;
+}
+
+#climbingCat {
+  scale: 50%;
+  border: solid yellow 1px;
+  position: absolute;
+  top: 0px; right: -300px;
+}
+
+#topClimbingCat {
+  scale: 50%;
+  border: solid orange 1px;
+  position: sticky;
+  /*top: -300px; right: 0px;              where is the image relative to??? how to move it up...*/
 }
 
 .title {
