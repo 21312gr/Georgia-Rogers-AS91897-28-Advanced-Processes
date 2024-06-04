@@ -8,6 +8,7 @@ html {
 .annoyingPage {
   margin: 0px;
   height: 100vh;
+  display: flex;
 }
 
 .irritatingPage {
@@ -15,22 +16,22 @@ html {
   height: 100%;
   box-sizing: border-box;
   border: solid #8cbccf 20px;
-  display: inline-flex;
+  display: flex;
   width: 100%;
 }
 
 .centreColumn {
-  width: 34%;
+  flex: 34%;
   background-color: #afdae9;
   color: white;
   border: 0px;
   height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
+ /* margin-top: auto;
+  margin-bottom: auto;*/
 }
 
 .sideColumn {
-  width: 33%;
+  flex: 33%;
   /*border: solid black 1px;*/
   height: 100%;
   position: relative;
@@ -56,7 +57,7 @@ html {
   scale: 50%;
   border: solid yellow 1px;
   position: absolute;
-  top: 50px;
+  top: 20%;
   right: -110px;
 }
 
@@ -64,7 +65,7 @@ html {
   scale: 50%;
   border: solid orange 1px;
   position: sticky;
-  top: -100px;
+  top: -20px;
   /*top: -300px; right: 0px;              where is the image relative to??? how to move it up...*/
 }
 
