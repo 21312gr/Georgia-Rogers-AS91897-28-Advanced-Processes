@@ -26,47 +26,40 @@ html {
   color: white;
   border: 0px;
   height: 100%;
- /* margin-top: auto;
-  margin-bottom: auto;*/
 }
 
 .sideColumn {
   flex: 33%;
-  /*border: solid black 1px;*/
   height: 100%;
   position: relative;
 }
 
 #leftCatPile {
-  border: solid red 1px;
-  /*float: right;*/
   position: absolute;
-  bottom: 0px;
+  bottom: -25px;
   left: 0px;
+  width: 105%;
+  height: auto;
 }
 
 #rightCatPile {
-  border: solid red 1px;
-  /*float: right;*/
   position: absolute;
-  bottom: 0px;
+  bottom: -25px;
   right: 0px;
+  width: 105%;
+  height: auto;
 }
 
 #climbingCat {
-  scale: 50%;
-  border: solid yellow 1px;
   position: absolute;
   top: 20%;
-  right: -110px;
+  right: -30px;
 }
 
 #topClimbingCat {
-  scale: 50%;
-  border: solid orange 1px;
-  position: sticky;
-  top: -20px;
-  /*top: -300px; right: 0px;              where is the image relative to??? how to move it up...*/
+  position: absolute;
+  top:-20px;
+  left: 20%;
 }
 
 .title {
@@ -155,10 +148,20 @@ html {
    font-weight: bold;         
 }
 
+#sphinx {
+position: absolute;
+bottom:0;
+  left: 50%;
+  transform: translate(-100%, 0%);
+}
 
+#pointing {
+  position: absolute;
+  bottom:-15px;
+  left: 50%;
+  transform: translate(-30%, 0%);
+}
 
-/* NEED TO  
--  make infoTitle 
--  make images PNG's
--  top hanging cat position
-*/
+.wasd {
+  padding-top: 10px;
+}
