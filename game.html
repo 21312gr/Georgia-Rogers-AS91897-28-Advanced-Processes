@@ -1,90 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Add a title</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-		<!--Installing A-Frame-->
-		<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-		
-		<!-- The aframe-extras version 5 add-on enables glb animations and lots of other things -->
-<script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hide and Seek</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--Installing A-Frame-->
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+
+    <!-- The aframe-extras version 5 add-on enables glb animations and lots of other things -->
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
 
 
 </head>
+
 <body>
     <a-scene>
-        
-     <!--   <a-light type="point" position=" 5 5 -5" color="yellow" light="castShadow:true" 
-        ></a-light>
-       
-        <a-light type="point" position="-5 5 -5" color="white"  light="castShadow:true"
-        ></a-light> -->
-        
+
+
         <a-sky color="lightblue"></a-sky>
-      
-        <a-plane color="green" width="1000" height="1000" depth="1000" position="0 0 0" 
-        rotation="-90 0 0" shadow="receive: true"></a-plane>
 
-        
+        <a-plane color="green" width="100" height="100" depth="100" position="0 0 0" rotation="-90 0 0"
+            shadow="receive: true"></a-plane>
+
+
         <!-- cat_scratching_post -->
-        
-        <a-gltf-model src="models/cat_scratching_post.glb"
-        animation-mixer  position="-11 5.894 -45" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-        ></a-gltf-model>
 
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="11 5.894 -45" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="-11 5.894 -35" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="11 5.894 -35" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="-11 5.894 -25" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="11 5.894 -25" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="-11 5.894 -15" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="11 5.894 -15" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="-11 5.894 -5" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb"
-            animation-mixer  position="11 5.894 -5" scale="6 6 6" shadow="cast:true" rotation="0 -90 0"
-            ></a-gltf-model>
-
-        
- <!-- cat beds -->
-
-        
-        <a-gltf-model src="models/cat_bed.glb"
-            animation-mixer  position="50.923 7.113 -0.042" scale="30 30 30" shadow="cast:true" rotation="0 -180 0"
-            ></a-gltf-model>
-        
-        <a-gltf-model src="models/cat_tower.glb"
-            animation-mixer  position="45.887 2.146 -43.497" scale="30 30 30" shadow="cast:true" rotation="0 -180 0"
-            ></a-gltf-model>
+        <a-gltf-model src="models/cat_scratching_post.glb" animation-mixer position="0 2 -5" scale="2 2 2"
+            shadow="cast:true" rotation="0 -90 0"></a-gltf-model>
 
 
 
-        
-</a-scene>
+<!-- 
+        WHY DOES IT TAKE SO LONG TO LOAD?
+        -->
+
+    </a-scene>
 </body>
+
 </html>
