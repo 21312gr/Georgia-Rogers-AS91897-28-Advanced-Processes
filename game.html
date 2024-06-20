@@ -19,20 +19,17 @@
         
         <!-- SKY / GROUND -->
 
-        <a-sky color="lightblue"></a-sky>
-
-        <a-plane color="green" width="100" height="100" depth="100" position="0 0 0" rotation="-90 0 0"
+        <a-sky src="images/sky4.jpg"></a-sky>
+        
+        <a-plane src="images/grass2.jpg" width="100" height="100" depth="100" position="0 0 0" rotation="-90 0 0"
             shadow="receive: true"></a-plane>
 
         <a-plane color="grey" width="8" height="100" depth="100" position="0 0.01 0" rotation="-90 0 0"
             shadow="receive: true"></a-plane>
 
 
-        <!-- TREES - cat_scratching_post -->
+        <!-- LEFT SIDE TREES -->
         <a-gltf-model src="models/cat_scratching_post.glb" id="tree1" position="-7 4 -27" scale="4 4 4"
-            shadow="cast:true" rotation="0 -90 0"></a-gltf-model>
-
-        <a-gltf-model src="models/cat_scratching_post.glb" id="tree2" position="7 4 -27" scale="4 4 4"
             shadow="cast:true" rotation="0 -90 0"></a-gltf-model>
 
         <a-gltf-model src="models/cat_scratching_post.glb" id="tree3" position="-7 4 -16" scale="4 4 4"
@@ -46,7 +43,12 @@
 
         <a-gltf-model src="models/cat_scratching_post.glb" id="tree6" position="-7 4 16" scale="4 4 4"
             shadow="cast:true" rotation="0 -90 0"></a-gltf-model>
-
+        
+        <!-- RIGHT SIDE TREES-->
+        
+ <a-gltf-model src="models/cat_scratching_post.glb" id="tree2" position="7 4 -27" scale="4 4 4"
+            shadow="cast:true" rotation="0 -90 0"></a-gltf-model>
+        
         <a-gltf-model src="models/cat_scratching_post.glb" id="tree7" position="7 4 -16" scale="4 4 4"
             shadow="cast:true" rotation="0 -90 0"></a-gltf-model>
 
@@ -57,11 +59,11 @@
             rotation="0 -90 0"></a-gltf-model>
 
         <a-gltf-model src="models/cat_scratching_post.glb" id="tree10" position="7 4 16" scale="4 4 4"
-            shadow="cast:true" rotation="0 -90 0"></a-gltf-model>
+            shadow="cast:true" rotation="0 -90 0"></a-gltf-model> 
 
 
-        <!-- CATS - chonky_cat_trio / toon_cat_free -->
-        <a-gltf-model src="models/toon_cat_free.glb" id="cat1" animation-mixer position="-2 0 -15"
+        <!-- CATS -->
+        <a-gltf-model src="models/minecraft_cat.glb" id="cat1" animation-mixer position="-2 0 -15"
             scale="0.005 0.005 0.005" shadow="cast:true" rotation="0 0 0"></a-gltf-model>
 
 
