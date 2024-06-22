@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <!--Installing A-Frame-->
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
 
 
 
@@ -63,15 +64,37 @@
 
 
         <!-- CATS -->
-        <a-gltf-model src="models/bw_cat.glb" id="cat1" animation-mixer position="-2 0 -15"
-            scale="1 1 1" shadow="cast:true" rotation="0 0 0"></a-gltf-model>
 
+        <!-- BW cats -->
+        <a-gltf-model src="models/bw_cat.glb" id="bwcat1" animation-mixer="" position="-2 0.6 -7" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
 
+        <a-gltf-model src="models/bw_cat.glb" id="bwcat2" animation-mixer="" position="-2 0.6 -8" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
 
+        <!-- Lying cats -->
+        <a-gltf-model src="models/lying_cat.glb" id="lcat1" animation-mixer="" position="-2 0.6 -9" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
 
-        <!-- Load time = 5 seconds for everything to load in -->
+        <a-gltf-model src="models/lying_cat.glb" id="lcat2" animation-mixer="" position="-2 0.6 -10" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
 
-        
+        <!-- White cats -->
+        <a-gltf-model src="models/white_cat.glb" id="wcat1" animation-mixer="" position="-2 0.6 -11" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
+
+        <a-gltf-model src="models/white_cat.glb" id="wcat2" animation-mixer="" position="-2 0.6 -12" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
+
+        <!-- Black cats -->
+        <a-gltf-model src="models/black_cat.glb" id="bcat1" animation-mixer="" position="-2 0.6 -13" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
+
+        <a-gltf-model src="models/black_cat.glb" id="bcat2" animation-mixer="" position="-2 0.6 -14" scale="0.1 0.1 0.1"
+            shadow="" rotation="0 180 0"></a-gltf-model>
+
+        <!-- Cafe -->
+        <a-entity ply-model="src: models/cafe.ply" id="cafe" position="5.5 -7 -20" scale="2 2 2" rotation="-90 -90 0"></a-entity>
 
 
     </a-scene>
