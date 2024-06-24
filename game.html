@@ -8,20 +8,20 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <!--Installing A-Frame-->
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    
+
     <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
-     <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
 
 
 </head>
 
 <body>
-    <a-scene physics="gravity: -9.8; restitution: 0.1" inspector-plugin-recast>
+    <a-scene> <!--physics="gravity: -9.8; restitution: 0.1" inspector-plugin-recast-->
 
-        <!-- Camera/Navmesh -->
+
         <a-entity id="rig" position="0 0 0" movement-controls="constrainToNavMesh: true;speed:0.5;">
             <a-entity camera id="camera" position="0 1.6 0" look-controls extended-wasd-controls>
             </a-entity>
@@ -29,12 +29,13 @@
 
         <!-- SKY / GROUND -->
 
-        <a-sky src="images/sky4.jpg" ></a-sky>
+        <a-sky src="images/sky4.jpg"></a-sky>
 
         <a-plane src="images/grass2.jpg" width="100" height="100" depth="100" position="0 0 0" rotation="-90 0 0"
             shadow="receive: true"></a-plane>
 
-        <a-plane color="grey" width="8" height="100" depth="100" position="0 0.01 7.37161" rotation="-90 0 0" scale="1 0.85 1"></a-plane>
+        <a-plane color="grey" width="8" height="100" depth="100" position="0 0.01 7.37161" rotation="-90 0 0"
+            scale="1 0.85 1"></a-plane>
 
 
         <!-- LEFT SIDE TREES -->
@@ -74,11 +75,14 @@
         <!-- CATS -->
 
         <!-- BW cats -->
-        <a-gltf-model src="models/bw_cat.glb" id="bwcat1" position="2.24682 0.6 6.17751" scale="0.1 0.1 0.1" rotation="0 180 0" gltf-model="models/bw_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/bw_cat.glb" id="bwcat1" position="2.24682 0.6 6.17751" scale="0.1 0.1 0.1"
+            rotation="0 180 0" gltf-model="models/bw_cat.glb"></a-gltf-model>
 
-        <a-gltf-model src="models/bw_cat.glb" id="bwcat2" position="2.04838 0.6 -22.03772" scale="0.1 0.1 0.1" rotation="0 180 0" gltf-model="models/bw_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/bw_cat.glb" id="bwcat2" position="2.04838 0.6 -22.03772" scale="0.1 0.1 0.1"
+            rotation="0 180 0" gltf-model="models/bw_cat.glb"></a-gltf-model>
 
-        <a-gltf-model src="models/bw_cat.glb" id="windowcat1" position="17.93057 6.95779 6.62404" scale="0.1 0.1 0.1" rotation="0 90 0" gltf-model="models/bw_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/bw_cat.glb" id="windowcat1" position="17.93057 6.95779 6.62404" scale="0.1 0.1 0.1"
+            rotation="0 90 0" gltf-model="models/bw_cat.glb"></a-gltf-model>
 
         <!-- Lying cats -->
         <a-gltf-model src="models/lying_cat.glb" id="lcat1" position="6.53074 0.91641 -0.3259" scale="0.1 0.1 0.1"
@@ -90,21 +94,28 @@
         <a-gltf-model src="models/lying_cat.glb" id="lcat3" position="6.53074 0.91641 -22.150" scale="0.1 0.1 0.1"
             rotation="0 180 0"></a-gltf-model>
 
-        <a-gltf-model src="models/lying_cat.glb" id="overhangcat1" position="-15.64143 6.25442 10.16178" scale="0.1 0.1 0.1" rotation="" gltf-model="models/lying_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/lying_cat.glb" id="overhangcat1" position="-15.64143 6.25442 10.16178"
+            scale="0.1 0.1 0.1" rotation="" gltf-model="models/lying_cat.glb"></a-gltf-model>
 
         <!-- Calico cats -->
-        <a-gltf-model src="models/calico_cat.glb" id="ccat1" position="-2.58035 0.02 -27.14769" scale="1.6 1.6 1.6" gltf-model="models/calico_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/calico_cat.glb" id="ccat1" position="-2.58035 0.02 -27.14769" scale="1.6 1.6 1.6"
+            gltf-model="models/calico_cat.glb"></a-gltf-model>
 
-        <a-gltf-model src="models/calico_cat.glb" id="ccat2" position="2.46726 0.02 -8.28322" scale="1.6 1.6 1.6" rotation="0 180 0" gltf-model="models/calico_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/calico_cat.glb" id="ccat2" position="2.46726 0.02 -8.28322" scale="1.6 1.6 1.6"
+            rotation="0 180 0" gltf-model="models/calico_cat.glb"></a-gltf-model>
 
-        <a-gltf-model src="models/calico_cat.glb" id="roofcat1" position="-16.90186 7.99995 -4.70457" scale="1.6 1.6 1.6" rotation="0 -90 0" gltf-model="models/calico_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/calico_cat.glb" id="roofcat1" position="-16.90186 7.99995 -4.70457"
+            scale="1.6 1.6 1.6" rotation="0 -90 0" gltf-model="models/calico_cat.glb"></a-gltf-model>
 
         <!-- Black cats -->
-        <a-gltf-model src="models/black_cat.glb" id="bcat1" position="-2 0.02 -13" scale="1.6 1.6 1.6" rotation="0 180 0" gltf-model="models/black_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/black_cat.glb" id="bcat1" position="-2 0.02 -13" scale="1.6 1.6 1.6"
+            rotation="0 180 0" gltf-model="models/black_cat.glb"></a-gltf-model>
 
-        <a-gltf-model src="models/black_cat.glb" id="bcat2" position="-2.14648 0.02 -2.65076" scale="1.6 1.6 1.6" rotation="" gltf-model="models/black_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/black_cat.glb" id="bcat2" position="-2.14648 0.02 -2.65076" scale="1.6 1.6 1.6"
+            rotation="" gltf-model="models/black_cat.glb"></a-gltf-model>
 
-        <a-gltf-model src="models/black_cat.glb" id="windowcat2" position="4.66583 1.06006 -39.70745" scale="1.6 1.6 1.6" rotation="0 180 0" gltf-model="models/black_cat.glb"></a-gltf-model>
+        <a-gltf-model src="models/black_cat.glb" id="windowcat2" position="4.66583 1.06006 -39.70745"
+            scale="1.6 1.6 1.6" rotation="0 180 0" gltf-model="models/black_cat.glb"></a-gltf-model>
 
 
         <!-- BUILDINGS -->
@@ -143,9 +154,11 @@
             rotation="-90 90 0"></a-entity>
 
         <!-- house -->
-        <a-entity ply-model="src: models/house.ply" id="house" position="-0.02014 -3.966 -33.72795" scale="2 2 2" rotation="-90.00021045914971 0 0"></a-entity>
+        <a-entity ply-model="src: models/house.ply" id="house" position="-0.02014 -3.966 -33.72795" scale="2 2 2"
+            rotation="-90.00021045914971 0 0"></a-entity>
 
-        <a-entity ply-model="src: models/house2.ply" id="house2" position="-16.332 -3.966 -33.72795" scale="2 2 2" rotation="-90.00021045914971 0 0"></a-entity>
+        <a-entity ply-model="src: models/house2.ply" id="house2" position="-16.332 -3.966 -33.72795" scale="2 2 2"
+            rotation="-90.00021045914971 0 0"></a-entity>
 
         <!-- BENCH SEATS -->
         <a-entity ply-model="src: models/seat.ply" id="seat1" position="9 -4 2.345" scale="2 2 2"
